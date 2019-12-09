@@ -1,0 +1,1 @@
+set name=wscript.CreateObject("OBJECT")
