@@ -12,6 +12,7 @@ objExcel.Cells(1, 4).Value = "AGE"
 
 Do
 n = InputBox("ENTER NAME")
+a = InputBox("ENTER AGE")
 if IsEmpty(n) Then
 objExcel.ActiveWorkbook.Saveas "C:\Users\TOUSIF\Desktop\vbs\NAMEANDAGE.xlsx"
 objExcel.ActiveWorkbook.Close "C:\Users\TOUSIF\Desktop\vbs\NAMEANDAGE.xlsx"
@@ -19,7 +20,6 @@ objExcel.Application.Quit
 obj.DeleteFile "C:\Users\TOUSIF\Desktop\vbs\NAMEANDAGE.xlsx"
 WScript.Echo "Finished."
 WScript.Quit
-a = InputBox("ENTER AGE")
 elseif IsEmpty(a) Then
 objExcel.ActiveWorkbook.Saveas "C:\Users\TOUSIF\Desktop\vbs\NAMEANDAGE.xlsx"
 objExcel.ActiveWorkbook.Close "C:\Users\TOUSIF\Desktop\vbs\NAMEANDAGE.xlsx"
